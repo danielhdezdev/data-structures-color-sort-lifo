@@ -128,10 +128,10 @@ void moverBola(STACK stacks[])
 
     // Pedir al usuario los números de los stacks de origen y destino
     printf("De: ");
-    if (scanf("%d", &origen) != 1) { fprintf(stderr, "input error\n"); return 1; }
+    if (scanf("%d", &origen) != 1) { fprintf(stderr, "input error\n"); return; }
 
     printf("A: ");
-    if (scanf("%d", &destino) != 1) { fprintf(stderr, "input error\n"); return 1; }
+    if (scanf("%d", &destino) != 1) { fprintf(stderr, "input error\n"); return; }
 
     // Verificar si los números de stack son válidos
     if (origen < 0 || origen > 7 || destino < 0 || destino > 7)
